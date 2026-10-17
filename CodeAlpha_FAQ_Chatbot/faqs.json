@@ -1,0 +1,83 @@
+
+[
+  {
+    "question": "What is Python?",
+    "answer": "Python is a high-level, general-purpose programming language known for its simple and readable syntax."
+  },
+  {
+    "question": "Who created Python?",
+    "answer": "Python was created by Guido van Rossum and was first released in 1991."
+  },
+  {
+    "question": "What is a variable in Python?",
+    "answer": "A variable is a name used to store or refer to a value in a program. For example, age = 20."
+  },
+  {
+    "question": "What are Python data types?",
+    "answer": "Common Python data types include int, float, str, bool, list, tuple, set, and dict."
+  },
+  {
+    "question": "What is a list in Python?",
+    "answer": "A list is an ordered, mutable collection that can store multiple items. Example: fruits = ['apple', 'mango']."
+  },
+  {
+    "question": "What is a tuple?",
+    "answer": "A tuple is an ordered collection that cannot be changed after it is created. Example: numbers = (1, 2, 3)."
+  },
+  {
+    "question": "What is a dictionary in Python?",
+    "answer": "A dictionary stores data as key-value pairs. Example: student = {'name': 'Aman', 'age': 20}."
+  },
+  {
+    "question": "What is a set in Python?",
+    "answer": "A set is a collection of unique elements. It removes duplicate values automatically."
+  },
+  {
+    "question": "What is a function?",
+    "answer": "A function is a reusable block of code that performs a particular task. In Python, functions are defined using def."
+  },
+  {
+    "question": "How do you define a function in Python?",
+    "answer": "Use the def keyword followed by the function name and parentheses. Example: def greet(): print('Hello')."
+  },
+  {
+    "question": "What is a loop in Python?",
+    "answer": "A loop repeats a block of code. Python provides for loops and while loops."
+  },
+  {
+    "question": "What is a for loop?",
+    "answer": "A for loop iterates over items in a sequence, such as a list or a string."
+  },
+  {
+    "question": "What is a while loop?",
+    "answer": "A while loop repeats a block of code as long as its condition is true."
+  },
+  {
+    "question": "What is a conditional statement?",
+    "answer": "Conditional statements let a program make decisions using if, elif, and else."
+  },
+  {
+    "question": "What is a string in Python?",
+    "answer": "A string is a sequence of characters, usually written inside single or double quotation marks."
+  },
+  {
+    "question": "What is a Boolean value?",
+    "answer": "A Boolean value represents either True or False."
+  },
+  {
+    "question": "What is a Python module?",
+    "answer": "A module is a Python file containing code such as functions, classes, or variables that can be reused."
+  },
+  {
+    "question": "What is exception handling?",
+    "answer": "Exception handling manages runtime errors using statements such as try and except."
+  },
+  {
+    "question": "What is a class in Python?",
+    "answer": "A class is a blueprint for creating objects. It can define attributes and methods."
+  },
+  {
+    "question": "What is a Python comment?",
+    "answer": "A comment explains code and is ignored by Python. A single-line comment starts with the # symbol."
+  }
+]

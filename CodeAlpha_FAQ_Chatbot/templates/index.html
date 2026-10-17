@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="PyFAQ is a helpful chatbot for learning Python programming basics."
+    >
+
+    <title>PyFAQ — Your Python Learning Companion</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+    <main class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <a class="brand" href="/" aria-label="PyFAQ home">
+                <span class="brand-icon">Py</span>
+                <span class="brand-name">PyFAQ<span class="brand-dot">.</span></span>
+            </a>
+
+            <div class="header-label">
+                <span class="status-dot"></span>
+                PYTHON HELP DESK
+            </div>
+        </header>
+
+        <!-- Intro section -->
+        <section class="hero">
+            <div class="eyebrow">
+                <span class="eyebrow-line"></span>
+                YOUR PYTHON COMPANION
+            </div>
+
+            <h1>
+                Learn Python,<br>
+                <span>one question at a time.</span>
+            </h1>
+
+            <p class="hero-description">
+                Stuck on a concept? Ask away. Get clear, beginner-friendly
+                answers and build your coding confidence.
+            </p>
+
+            <div class="hero-details">
+                <span><span class="detail-check">✓</span> Beginner friendly</span>
+                <span><span class="detail-check">✓</span> Instant FAQ matching</span>
+                <span><span class="detail-check">✓</span> Free to use</span>
+            </div>
+        </section>
+
+        <!-- Chat application -->
+        <section class="chat-card" aria-label="PyFAQ chatbot">
+
+            <div class="chat-header">
+                <div class="assistant-avatar">Py</div>
+
+                <div class="assistant-info">
+                    <h2>PyFAQ Assistant</h2>
+                    <p><span class="status-dot"></span> Here to help you learn</p>
+                </div>
+
+                <span class="chat-tag">PYTHON 101</span>
+            </div>
+
+            <div class="welcome" id="welcome">
+                <div class="welcome-symbol" aria-hidden="true">✳</div>
+
+                <h2>What are we learning today?</h2>
+
+                <p>
+                    Choose a suggested question or type your own below.
+                </p>
+
+                <div class="suggestions">
+                    <button type="button" class="suggestion">
+                        <span class="suggestion-icon">01</span>
+                        What is Python?
+                        <span class="suggestion-arrow">↗</span>
+                    </button>
+
+                    <button type="button" class="suggestion">
+                        <span class="suggestion-icon">02</span>
+                        Explain lists
+                        <span class="suggestion-arrow">↗</span>
+                    </button>
+
+                    <button type="button" class="suggestion">
+                        <span class="suggestion-icon">03</span>
+                        What is a function?
+                        <span class="suggestion-arrow">↗</span>
+                    </button>
+
+                    <button type="button" class="suggestion">
+                        <span class="suggestion-icon">04</span>
+                        What is a loop?
+                        <span class="suggestion-arrow">↗</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- JavaScript adds conversation messages here -->
+            <div
+                class="messages"
+                id="messages"
+                aria-live="polite"
+                aria-relevant="additions"
+            ></div>
+
+            <div class="typing" id="typing" hidden>
+                <span class="typing-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </span>
+                PyFAQ is thinking
+            </div>
+
+            <!-- Question input -->
+            <form class="chat-form" id="chat-form">
+                <label class="sr-only" for="message">
+                    Type your Python question
+                </label>
+
+                <input
+                    id="message"
+                    name="message"
+                    type="text"
+                    placeholder="Ask anything about Python..."
+                    maxlength="500"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" id="send-button">
+                    <span>Ask PyFAQ</span>
+                    <span class="send-arrow" aria-hidden="true">↗</span>
+                </button>
+            </form>
+
+            <p class="input-note">
+                <span class="note-icon">✳</span>
+                Answers are matched from the Python FAQ knowledge base.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>Made for curious minds.</span>
+            <span class="footer-brand">PyFAQ <span>·</span> Built with Python & NLP</span>
+        </footer>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
